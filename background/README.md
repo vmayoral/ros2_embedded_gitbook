@@ -2,12 +2,12 @@
 
 This chapter analyzes both commercial and open source embedded DDS solutions.
 
-### [TinyDDS](https://code.google.com/p/tinydds/)
-Freed using a BSD License:
->TinyDDS is an open-source and standards-based publish/subscribe middleware for wireless sensor networks. Compliant with the Object Management Group (OMG)’s Data Distribution Service (DDS) specification, TinyDDS is designed and implemented generic enough to aid in developing a wide range of event detection and data collection applications.
-
->TinyDDS is currently implemented in nesC, a dialect of the C language, for the TinyOS platform as well as in Java for the SunSPOT platform.
-
+| | [MicroDDS](http://www.icoup-consulting.com/microdds.html) |[CoreDX DDS](http://www.twinoakscomputing.com/coredx/embedded) | [Connext DDS Micro](http://www.rti.com/products/micro.html) | [Vortex Lite](http://www.prismtech.com/vortex/products/vortex-device/vortex-lite) | [TinyDDS](https://code.google.com/p/tinydds/) |
+|---|----------|-----------|-------------------|-------------| ------|
+|Footprint | | | | 200 KB | 36 KB |
+| ARM bare-bones support| | Talks about ARM support in `operative systems` | Yes (apparently supports ARM devices without OS) | | No |
+| FPGA support | | Yes | | | No |
+| Open Source License | No | No | No | No | BSD |
 
 
 ![](http://osrfoundation.org/assets/images/osrf_masthead.png)

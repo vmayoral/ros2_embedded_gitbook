@@ -1,6 +1,15 @@
 # Open Source
 
-###[tinydds](https://code.google.com/p/tinydds/)
+| |  [TinyDDS](https://code.google.com/p/tinydds/) |
+|---- | ------|
+|Footprint  | 36 KB |
+| ARM bare-bones support| No |
+| FPGA support | No |
+| Open Source License | BSD |
+
+
+
+###[TinyDDS](https://code.google.com/p/tinydds/)
 
 Taken from https://code.google.com/p/tinydds/:
 
