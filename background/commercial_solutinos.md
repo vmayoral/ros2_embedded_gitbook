@@ -29,6 +29,7 @@ No information about them is provided
 
 
 ### [CoreDX DDS [TwinOaks Computing]](http://www.twinoakscomputing.com/coredx/embedded)
+![](http://www.twinoakscomputing.com/images/toc_logo.png)
 CoreDX DDS is self-introduced as the leader in small footprint publish-subscribe middleware. They presume to support:
 - Gumstix platforms
 - ARM platforms
@@ -40,6 +41,7 @@ CoreDX DDS is self-introduced as the leader in small footprint publish-subscribe
 None of them seem to cover our necessities.
 
 ### [Connext DDS Micro (RTI)](http://www.rti.com/products/micro.html)
+![](http://www.rti.com/images/rti-logounit.png)
 >RTI Connext DDS Micro provides a small-footprint modular messaging solution for resource-limited devices that have minimal memory, Flash, CPU power or no operating system. Connext DDS Micro simultaneously satisfies demanding real-time performance requirements along with stringent resource constraints. By abstracting out low-level networking and communication details and providing a flexible integration framework, Connext DDS Micro minimizes the amount of device- or application-specific code that has to be created and reduces development costs.
 
 >Features and Benefits:
