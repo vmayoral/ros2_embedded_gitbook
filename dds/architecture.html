@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Architecture | freeDDS</title>
+        <title>Architecture | ROS 2.0 Embedded</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.6.2">
@@ -34,12 +34,12 @@
 
 
         
-    <div class="book" data-github="vmayoral/freeDDS_gitbook" data-level="2.1" data-basepath=".." data-revision="1407348491416">
+    <div class="book" data-github="vmayoral/ros2_embedded_gitbook" data-level="2.1" data-basepath=".." data-revision="1407452510484">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
-    <a href="https://github.com/vmayoral/freeDDS_gitbook" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    <a href="https://github.com/vmayoral/ros2_embedded_gitbook" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
     <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
@@ -82,14 +82,14 @@
     
 
     
-    <a href="https://github.com/vmayoral/freeDDS_gitbook/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
-    <a href="https://github.com/vmayoral/freeDDS_gitbook/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    <a href="https://github.com/vmayoral/ros2_embedded_gitbook/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/vmayoral/ros2_embedded_gitbook/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="../" >freeDDS</a>
+        <a href="../" >ROS 2.0 Embedded</a>
     </h1>
 </div>
 
@@ -111,14 +111,14 @@
         
         
         <li>
-            <a href="https://github.com/vmayoral/freeDDS_gitbook/issues" target="blank" class="issues-link">Questions and Issues</a>
+            <a href="https://github.com/vmayoral/ros2_embedded_gitbook/issues" target="blank" class="issues-link">Questions and Issues</a>
         </li>
         
 
         
         
         <li>
-            <a href="https://github.com/vmayoral/freeDDS_gitbook/edit/master/dds/architecture.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/vmayoral/ros2_embedded_gitbook/edit/master/dds/architecture.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -200,13 +200,46 @@
                 
     
         
-        <li class="chapter " data-level="1.1" data-path="background/commercial_solutinos.html">
+        <li class="chapter " data-level="1.1" data-path="background/freertos.html">
+            
+                
+                    <a href="../background/freertos.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         FreeRTOS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="background/dds.html">
+            
+                
+                    <a href="../background/dds.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         DDS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.2.1" data-path="background/commercial_solutinos.html">
             
                 
                     <a href="../background/commercial_solutinos.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>1.1.</b>
+                            <b>1.2.1.</b>
                         
                          Commercial solutions
                     </a>
@@ -216,18 +249,23 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="background/open_source.html">
+        <li class="chapter " data-level="1.2.2" data-path="background/open_source.html">
             
                 
                     <a href="../background/open_source.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>1.2.</b>
+                            <b>1.2.2.</b>
                         
                          Open Source
                     </a>
                 
             
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -245,7 +283,7 @@
                         
                             <b>2.</b>
                         
-                         DDS
+                         ROS 2 embedded
                     </a>
                 
             
@@ -283,7 +321,7 @@
                         
                             <b>3.</b>
                         
-                         Using freeDDS
+                         Using ROS 2 embedded
                     </a>
                 
             
@@ -306,59 +344,45 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 87.5%;min-width: 75%;"></div>
+        <div class="inner" style="width: 90%;min-width: 80%;"></div>
     </div>
     <div class="chapters">
     
         <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="../ros2.html" title="ROS 2" class="chapter done " data-progress="0.1" style="left: 12.5%;"></a>
+        <a href="../ros2.html" title="ROS 2" class="chapter done " data-progress="0.1" style="left: 10%;"></a>
     
-        <a href="../license.html" title="License" class="chapter done " data-progress="0.2" style="left: 25%;"></a>
+        <a href="../license.html" title="License" class="chapter done " data-progress="0.2" style="left: 20%;"></a>
     
-        <a href="../background/README.html" title="Background" class="chapter done new-chapter" data-progress="1" style="left: 37.5%;"></a>
+        <a href="../background/README.html" title="Background" class="chapter done new-chapter" data-progress="1" style="left: 30%;"></a>
     
-        <a href="../background/commercial_solutinos.html" title="Commercial solutions" class="chapter done " data-progress="1.1" style="left: 50%;"></a>
+        <a href="../background/freertos.html" title="FreeRTOS" class="chapter done " data-progress="1.1" style="left: 40%;"></a>
     
-        <a href="../background/open_source.html" title="Open Source" class="chapter done " data-progress="1.2" style="left: 62.5%;"></a>
+        <a href="../background/dds.html" title="DDS" class="chapter done " data-progress="1.2" style="left: 50%;"></a>
     
-        <a href="../dds/README.html" title="DDS" class="chapter done new-chapter" data-progress="2" style="left: 75%;"></a>
+        <a href="../background/commercial_solutinos.html" title="Commercial solutions" class="chapter done " data-progress="1.2.1" style="left: 60%;"></a>
     
-        <a href="../dds/architecture.html" title="Architecture" class="chapter done " data-progress="2.1" style="left: 87.5%;"></a>
+        <a href="../background/open_source.html" title="Open Source" class="chapter done " data-progress="1.2.2" style="left: 70%;"></a>
     
-        <a href="../using_nanodds/README.html" title="Using freeDDS" class="chapter  new-chapter" data-progress="3" style="left: 100%;"></a>
+        <a href="../dds/README.html" title="ROS 2 embedded" class="chapter done new-chapter" data-progress="2" style="left: 80%;"></a>
+    
+        <a href="../dds/architecture.html" title="Architecture" class="chapter done " data-progress="2.1" style="left: 90%;"></a>
+    
+        <a href="../using_nanodds/README.html" title="Using ROS 2 embedded" class="chapter  new-chapter" data-progress="3" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_13">
+                    <section class="normal" id="section-gitbook_438">
                     
                         <h1 id="architecture">Architecture</h1>
-<h3 id="freedds-architecture">freeDDS Architecture</h3>
-<p><img src="../img/ros_on_dds_diagrams_arch.png" alt=""></p>
-<p>The code has been designed according to the DDS specification and it is structured in 5 modules (&quot;Data Distribution Service for Real-time Systems, v1.2&quot;, pg. 24):</p>
-<blockquote>
-<ul>
-<li>The Infrastructure Module (<code>src/infrastructure</code>) defines the abstract classes and the interfaces that are refined by the other modules. It also
-provides support for the two interaction styles (notification- and wait- based) with the middleware.</li>
-<li>The Domain Module (<code>src/domain</code>) contains the DomainParticipant class that acts as an entry-point of the Service and acts as a
-factory for many of the classes. The DomainParticipant also acts as a container for the other objects that make up the
-Service.</li>
-<li>The Topic-Definition Module  (<code>src/topic</code>) contains the Topic, ContentFilteredTopic, and MultiTopic classes, the TopicListener
-interface, and more generally, all that is needed by the application to define Topic objects and attach QoS policies to
-them.</li>
-<li>The Publication Module (<code>src/publication</code>) contains the Publisher and DataWriter classes as well as the PublisherListener and
-DataWriterListener interfaces, and more generally, all that is needed on the publication side.</li>
-<li>The Subscription Module (<code>src/subscription</code>) contains the Subscriber, DataReader, ReadCondition, and QueryCondition classes, as well
-as the SubscriberListener and DataReaderListener interfaces, and more generally, all that is needed on the
-subscription side.</li>
-</ul>
-</blockquote>
+<h3 id="ros-2-embedded-architecture">ROS 2 embedded Architecture</h3>
+<p>Put a picture of freeDDS with comments informing what exactly should each layer implement</p>
 <h3 id="dds---osi-comparison">DDS - OSI comparison</h3>
-<p>Let&#39;s see how the layers proposed for our embedded DDS, freeDDS, match with the OSI architecture:</p>
-<p><img src="../img/ros_on_dds_diagrams_osi.png" alt=""></p>
+<p>Let&#39;s see how the layers proposed for our embedded DDS, match with the OSI architecture:</p>
+<p><img src="../img/ros_on_dds_diagrams_osi.png-UPDATEIMAGE" alt=""></p>
 <p><img src="http://osrfoundation.org/assets/images/osrf_masthead.png" alt=""></p>
 
                     
@@ -369,10 +393,10 @@ subscription side.</li>
         </div>
 
         
-        <a href="../dds/README.html" class="navigation navigation-prev " aria-label="Previous page: DDS"><i class="fa fa-angle-left"></i></a>
+        <a href="../dds/README.html" class="navigation navigation-prev " aria-label="Previous page: ROS 2 embedded"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../using_nanodds/README.html" class="navigation navigation-next " aria-label="Next page: Using freeDDS"><i class="fa fa-angle-right"></i></a>
+        <a href="../using_nanodds/README.html" class="navigation navigation-next " aria-label="Next page: Using ROS 2 embedded"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

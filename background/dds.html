@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Commercial solutions | ROS 2.0 Embedded</title>
+        <title>DDS | ROS 2.0 Embedded</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.6.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="vmayoral">
     
     
-    <link rel="next" href="../background/open_source.html" />
+    <link rel="next" href="../background/commercial_solutinos.html" />
     
     
-    <link rel="prev" href="../background/dds.html" />
+    <link rel="prev" href="../background/freertos.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="vmayoral/ros2_embedded_gitbook" data-level="1.2.1" data-basepath=".." data-revision="1407452510484">
+    <div class="book" data-github="vmayoral/ros2_embedded_gitbook" data-level="1.2" data-basepath=".." data-revision="1407452510484">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/vmayoral/ros2_embedded_gitbook/edit/master/background/commercial_solutinos.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/vmayoral/ros2_embedded_gitbook/edit/master/background/dds.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -216,7 +216,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="background/dds.html">
+        <li class="chapter active" data-level="1.2" data-path="background/dds.html">
             
                 
                     <a href="../background/dds.html">
@@ -233,7 +233,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.2.1" data-path="background/commercial_solutinos.html">
+        <li class="chapter " data-level="1.2.1" data-path="background/commercial_solutinos.html">
             
                 
                     <a href="../background/commercial_solutinos.html">
@@ -344,7 +344,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 60%;min-width: 50%;"></div>
+        <div class="inner" style="width: 50%;min-width: 40%;"></div>
     </div>
     <div class="chapters">
     
@@ -360,7 +360,7 @@
     
         <a href="../background/dds.html" title="DDS" class="chapter done " data-progress="1.2" style="left: 50%;"></a>
     
-        <a href="../background/commercial_solutinos.html" title="Commercial solutions" class="chapter done " data-progress="1.2.1" style="left: 60%;"></a>
+        <a href="../background/commercial_solutinos.html" title="Commercial solutions" class="chapter  " data-progress="1.2.1" style="left: 60%;"></a>
     
         <a href="../background/open_source.html" title="Open Source" class="chapter  " data-progress="1.2.2" style="left: 70%;"></a>
     
@@ -375,9 +375,10 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_428">
+                    <section class="normal" id="section-gitbook_433">
                     
-                        <h1 id="commercial-solutions">Commercial solutions</h1>
+                        <h1 id="dds">DDS</h1>
+<p>This chapter analyzes both commercial and open source embedded DDS solutions.</p>
 <table>
 <thead>
 <tr>
@@ -386,6 +387,7 @@
 <th><a href="http://www.twinoakscomputing.com/coredx/embedded" target="_blank">CoreDX DDS</a></th>
 <th><a href="http://www.rti.com/products/micro.html" target="_blank">Connext DDS Micro</a></th>
 <th><a href="http://www.prismtech.com/vortex/products/vortex-device/vortex-lite" target="_blank">Vortex Lite</a></th>
+<th><a href="https://code.google.com/p/tinydds/" target="_blank">TinyDDS</a></th>
 </tr>
 </thead>
 <tbody>
@@ -395,6 +397,7 @@
 <td></td>
 <td></td>
 <td>200 KB</td>
+<td>36 KB</td>
 </tr>
 <tr>
 <td>ARM bare-bones support</td>
@@ -402,6 +405,7 @@
 <td>Talks about ARM support in <code>operative systems</code></td>
 <td>Yes (apparently supports ARM devices without OS)</td>
 <td></td>
+<td>No</td>
 </tr>
 <tr>
 <td>FPGA support</td>
@@ -409,6 +413,7 @@
 <td>Yes</td>
 <td></td>
 <td></td>
+<td>No</td>
 </tr>
 <tr>
 <td>Open Source License</td>
@@ -416,79 +421,10 @@
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>BSD</td>
 </tr>
 </tbody>
 </table>
-<p>All this work wouldn&#39;t be neccesary if there were any DDS embedded solution satisfying and OSI-license. Let&#39;s take a look at the available commercial solutions for embedded systems:</p>
-<h3 id="microddshttpwwwicoup-consultingcommicroddshtml"><a href="http://www.icoup-consulting.com/microdds.html" target="_blank">MicroDDS</a></h3>
-<p>Presented as a tailored middleware for micro-controllers to match the communication needs of the client&#39;s applications in small devices with support for:</p>
-<blockquote>
-<ul>
-<li>for 8-bit micro-controllers with less than 2KB SRAM and less than 32KByte ROM</li>
-<li>built with the focus on performance and resource limited hardware</li>
-<li>compliant to the DDS standard — proven and robust network technology</li>
-<li>auto-discovery of peer nodes, and integration into the DDS infrastructure</li>
-<li>simple and easy to use API (4 methods each)</li>
-<li>enabling fault tolerant and high-available DDS applications for sensors and actuators</li>
-</ul>
-<p>With MicroDDS you opt in to the newest publisher / subscriber network technology for real-time systems on the market.</p>
-</blockquote>
-<h5 id="licenses">Licenses</h5>
-<p>No information about them is provided</p>
-<h3 id="coredx-dds-twinoaks-computinghttpwwwtwinoakscomputingcomcoredxembedded"><a href="http://www.twinoakscomputing.com/coredx/embedded" target="_blank">CoreDX DDS [TwinOaks Computing]</a></h3>
-<p><img src="http://www.twinoakscomputing.com/images/toc_logo.png" alt="">
-CoreDX DDS is self-introduced as the leader in small footprint publish-subscribe middleware. They presume to support:</p>
-<ul>
-<li>Gumstix platforms</li>
-<li>ARM platforms</li>
-<li>MIPS platforms</li>
-<li>FPGAs</li>
-</ul>
-<h5 id="licenseshttpwwwtwinoakscomputingcomcoredxlicenses"><a href="http://www.twinoakscomputing.com/coredx/licenses" target="_blank">Licenses</a></h5>
-<p>None of them seem to cover our necessities.</p>
-<h3 id="connext-dds-micro-rtihttpwwwrticomproductsmicrohtml"><a href="http://www.rti.com/products/micro.html" target="_blank">Connext DDS Micro (RTI)</a></h3>
-<p><img src="http://www.rti.com/images/rti-logounit.png" alt=""></p>
-<blockquote>
-<p>RTI Connext DDS Micro provides a small-footprint modular messaging solution for resource-limited devices that have minimal memory, Flash, CPU power or no operating system. Connext DDS Micro simultaneously satisfies demanding real-time performance requirements along with stringent resource constraints. By abstracting out low-level networking and communication details and providing a flexible integration framework, Connext DDS Micro minimizes the amount of device- or application-specific code that has to be created and reduces development costs.</p>
-<p>Features and Benefits:</p>
-<ul>
-<li>Small memory footprint</li>
-<li>User-configurable feature set through build options</li>
-<li>Support for low-power CPUs</li>
-<li>Scalability from embedded 16-bit microcontrollers to multicore 64-bit CPUs</li>
-<li>Bundled source code</li>
-<li>Pre-built support for Linux (x86), Windows, FreeRTOS (ARM), VxWorks (PowerPC) and devices without OS (ARM)</li>
-<li>Portability to other embedded or real-time operating systems</li>
-<li>Completely decentralized and easy-to-embed architecture with no message brokers or daemon processes</li>
-<li>Standards compliant: based on DDS programming interface and RTPS wire interoperability protocol</li>
-</ul>
-</blockquote>
-<hr>
-<h5 id="licenseshttpwwwrticomresourcesresearch-programshtml"><a href="http://www.rti.com/resources/research-programs.html" target="_blank">Licenses</a></h5>
-<p>They seem to provide a license for research programs but there&#39;s also a current conversation with RTI. It might be interesting to include this topic on the discussion.</p>
-<hr>
-<h3 id="vortex-lite-prismtechhttpwwwprismtechcomvortexproductsvortex-devicevortex-lite"><a href="http://www.prismtech.com/vortex/products/vortex-device/vortex-lite" target="_blank">Vortex Lite (PrismTech)</a></h3>
-<blockquote>
-<p>Vortex Lite offers full DDSI rev2.1 interoperability with enhanced real-time performance. Vortex Lite brings real-time data sharing to resource constrained embedded devices.</p>
-<p>Key Benefits</p>
-<ul>
-<li>Minimal resource-consumption with regard to CPU- and Memory-usage</li>
-<li>Allows variability on functionalities, transport and support of underlying OS / BSP</li>
-<li>Deterministic data delivery: data urgency / importance based network-scheduling
--Networking efficiency: configurable &#39;networkPartitions&#39; allowing to partition the physical network</li>
-<li>Ease of use: pluggable ISO-C++ DDS-API</li>
-</ul>
-<p>Key Features</p>
-<ul>
-<li>Smallest footprint on the market: as low as 200 KB</li>
-<li>Lowest end to end E2E latency, &lt; 50 µsec (GigaBit LAN network)</li>
-<li>Real-time data-priority based network-scheduling</li>
-<li>ISO-C++ API for increased productivity and code quality</li>
-</ul>
-</blockquote>
-<hr>
-<h5 id="licenses">Licenses</h5>
-<hr>
 <p><img src="http://osrfoundation.org/assets/images/osrf_masthead.png" alt=""></p>
 
                     
@@ -499,10 +435,10 @@ CoreDX DDS is self-introduced as the leader in small footprint publish-subscribe
         </div>
 
         
-        <a href="../background/dds.html" class="navigation navigation-prev " aria-label="Previous page: DDS"><i class="fa fa-angle-left"></i></a>
+        <a href="../background/freertos.html" class="navigation navigation-prev " aria-label="Previous page: FreeRTOS"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../background/open_source.html" class="navigation navigation-next " aria-label="Next page: Open Source"><i class="fa fa-angle-right"></i></a>
+        <a href="../background/commercial_solutinos.html" class="navigation navigation-next " aria-label="Next page: Commercial solutions"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
