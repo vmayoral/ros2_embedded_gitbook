@@ -1,11 +1,11 @@
 # Open Source
 
-| |  [TinyDDS](https://code.google.com/p/tinydds/) |
+| |  [TinyDDS](https://code.google.com/p/tinydds/) | [Tinq](https://github.com/vmayoral/tinq-core) |
 |---- | ------|
-|Footprint  | 36 KB |
-| ARM bare-bones support| No |
-| FPGA support | No |
-| Open Source License | BSD |
+|Footprint  | 36 KB | 600 KB (needs to be stripped)|
+| ARM bare-bones support| No | Needs work |
+| FPGA support | No | No |
+| Open Source License | BSD | Clear BSD |
 
 
 
@@ -18,6 +18,9 @@ Taken from https://code.google.com/p/tinydds/:
 >TinyDDS is currently implemented in nesC, a dialect of the C language, for the TinyOS platform as well as in Java for the SunSPOT platform.
 
 
+###[Tinq](https://github.com/vmayoral/tinq-core)
+
+Tinq (branch of Qeo) includes an open source DDS implementation writen in plain C and licensed as Clear BSD. Although it was coded for general purpose OSs, the code interfaces are nicely separated which might allow to easily port it to embedded platforms.
 
 
 ###Sources

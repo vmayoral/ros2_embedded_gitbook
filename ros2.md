@@ -38,7 +38,7 @@ requirements for the information access.
 >
 >Taken from OpenSplice DDS Version 6.x C Tutorial Guide
 
-### ROS 2 and freeDDS
+### ROS 2 in the embedded world
 
 The previous architecture is intractable for embedded systems where resources are limited thereby a new approach for this kind of devices should be designed. The architecture should contain the RTPS protocol (_the wire protocol_) and also at least the _Minimum_ and _Ownership_ profiles from the _Data Centric Publish/Subscribe Layer_.
 
